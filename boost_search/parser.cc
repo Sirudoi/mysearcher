@@ -2,7 +2,7 @@
 #include <fstream>
 #include <boost/filesystem.hpp>
 #include "parser.h"
-#include "util.hpp"
+#include "./common/util.hpp"
 
 int main()
 {

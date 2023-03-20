@@ -9,7 +9,7 @@ $(PARSER):parser.cc
 	$(cc) -o $@ $^ -std=c++11 -lboost_system -lboost_filesystem
 
 $(SEARCH):search.cc
-	$(cc) -o $@ $^ -std=c++11 -ljsoncpp
+	$(cc) -o $@ $^ -std=c++11 -ljsoncpp -lpthread
 
 .PHONY:clean
 clean:
