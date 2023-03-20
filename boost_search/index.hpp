@@ -11,16 +11,6 @@
 
 namespace ns_index
 {
-    class Index;
-    struct ThreadArg
-    {
-        Index *index;
-        int start_line;
-        int read_line;
-        std::ifstream *ifs;
-        int *count;
-        int *sum;
-    };
     using namespace ns_log;
 
     // 去重倒排元素，可能一个词分词后，找到很多个id相同的文档
