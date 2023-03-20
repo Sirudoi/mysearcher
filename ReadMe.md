@@ -4,14 +4,15 @@
 
 页面展示
 
-![image-20230320142453891](https://gitee.com/sirudoi/my-item-search/blob/master/image/image-20230320142453891.png)	
+![image-20230320142453891](https://gitee.com/sirudoi/my-item-search/raw/master/image/image-20230320142453891.png)	
+
 搜索结果展示
 
-![](https://gitee.com/sirudoi/my-item-search/blob/master/image/image-20230320142622948.png)	
+![image-20230320142622948](https://gitee.com/sirudoi/my-item-search/raw/master/image/image-20230320142622948.png)	
 
 ### 宏观原理
 
-![image-20230320142912771](https://gitee.com/sirudoi/my-item-search/blob/master/image/image-20230320142912771.png)	
+![image-20230320142912771](https://gitee.com/sirudoi/my-item-search/raw/master/image/image-20230320142912771.png)	
 
 - 下载好`boost`的文档内容，将所有`html`里面的有效内容提取出来之后
 
