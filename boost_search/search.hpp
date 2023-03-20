@@ -1,5 +1,3 @@
-#ifndef SEARCH_INCLUDE
-#define SEARCH_INCLUDE
 #pragma once
 #include <algorithm>
 #include <jsoncpp/json/json.h>
@@ -130,5 +128,3 @@ namespace ns_search
     };
     ns_index::Index* ns_search::Search::ins = nullptr;
 }
-
-#endif
