@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-7/root/usr/bin/c++      CMakeFiles/boost_searcher.dir/search.cc.o  -o boost_searcher -rdynamic -ljsoncpp -lpthread 
