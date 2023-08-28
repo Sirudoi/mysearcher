@@ -1,6 +1,6 @@
-#include "search.hpp"
-#include "./common/httplib.h"
-#include "./common/log.hpp"
+#include "../include/search.hpp"
+#include "../include/httplib.h"
+#include "../include/log.hpp"
 
 using namespace ns_log;
 

@@ -37,7 +37,7 @@ namespace ns_log
         //添加时间戳
         log_msg += "[timestamp:";
         log_msg += std::to_string(time(nullptr));
-        log_msg += "]";
+        log_msg += "] ";
 
         //将日志信息重定向到stdout中，不添加\n，保证其在缓冲区不会刷新出来
         std::cout << log_msg;

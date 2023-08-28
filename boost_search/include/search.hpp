@@ -1,8 +1,8 @@
 #pragma once
 #include <algorithm>
 #include <jsoncpp/json/json.h>
-#include "index.hpp"
-#include "./common/util.hpp"
+#include "./index.hpp"
+#include "./util.hpp"
 
 
 namespace ns_search

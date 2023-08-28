@@ -15,22 +15,22 @@ get_filename_component(PROJ_ROOT "${CMAKE_CURRENT_SOURCE_DIR}" ABSOLUTE)
 
 # parser模块源文件
 set(PARSER_SOURCES
-    ${PROJ_ROOT}/parser.cc
+    ${PROJ_ROOT}/src/parser.cc
 )
 
 # search模块源文件
 set(SEARCH_SOURCES
-    ${PROJ_ROOT}/search.cc
+    ${PROJ_ROOT}/src/search.cc
 )
 
 # 头文件模块
 set(INCLUDES
-    ${PROJ_ROOT}/index.hpp
-    ${PROJ_ROOT}/parser.h
-    ${PROJ_ROOT}/search.hpp
-    ${PROJ_ROOT}/common/httplib.h
-    ${PROJ_ROOT}/common/log.hpp
-    ${PROJ_ROOT}/common/util.hpp
+    ${PROJ_ROOT}/include/index.hpp
+    ${PROJ_ROOT}/include/parser.h
+    ${PROJ_ROOT}/include/search.hpp
+    ${PROJ_ROOT}/include/common/httplib.h
+    ${PROJ_ROOT}/include/common/log.hpp
+    ${PROJ_ROOT}/include/common/util.hpp
 )
 
 # 添加可执行程序

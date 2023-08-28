@@ -6,21 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./common/util.hpp
-iostream
--
-string
--
-vector
--
-fstream
--
-boost/algorithm/string.hpp
--
-../cppjieba/Jieba.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/Jieba.hpp
-
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/DictTrie.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/DictTrie.hpp
 iostream
 -
 fstream
@@ -40,15 +26,15 @@ cmath
 limits
 -
 limonp/StringUtil.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/StringUtil.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/StringUtil.hpp
 limonp/Logging.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/Logging.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/Logging.hpp
 Unicode.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/Unicode.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/Unicode.hpp
 Trie.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/Trie.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/Trie.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/FullSegment.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/FullSegment.hpp
 algorithm
 -
 set
@@ -56,21 +42,21 @@ set
 cassert
 -
 limonp/Logging.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/Logging.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/Logging.hpp
 DictTrie.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/DictTrie.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/DictTrie.hpp
 SegmentBase.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/SegmentBase.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/SegmentBase.hpp
 Unicode.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/Unicode.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/Unicode.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/HMMModel.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/HMMModel.hpp
 limonp/StringUtil.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/StringUtil.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/StringUtil.hpp
 Trie.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/Trie.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/Trie.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/HMMSegment.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/HMMSegment.hpp
 iostream
 -
 fstream
@@ -80,25 +66,25 @@ memory.h
 cassert
 -
 HMMModel.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/HMMModel.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/HMMModel.hpp
 SegmentBase.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/SegmentBase.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/SegmentBase.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/Jieba.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/Jieba.hpp
 QuerySegment.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/QuerySegment.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/QuerySegment.hpp
 KeywordExtractor.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/KeywordExtractor.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/KeywordExtractor.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/KeywordExtractor.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/KeywordExtractor.hpp
 cmath
 -
 set
 -
 MixSegment.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/MixSegment.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/MixSegment.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/MPSegment.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/MPSegment.hpp
 algorithm
 -
 set
@@ -106,41 +92,41 @@ set
 cassert
 -
 limonp/Logging.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/Logging.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/Logging.hpp
 DictTrie.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/DictTrie.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/DictTrie.hpp
 SegmentTagged.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/SegmentTagged.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/SegmentTagged.hpp
 PosTagger.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/PosTagger.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/PosTagger.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/MixSegment.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/MixSegment.hpp
 cassert
 -
 MPSegment.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/MPSegment.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/MPSegment.hpp
 HMMSegment.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/HMMSegment.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/HMMSegment.hpp
 limonp/StringUtil.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/StringUtil.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/StringUtil.hpp
 PosTagger.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/PosTagger.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/PosTagger.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/PosTagger.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/PosTagger.hpp
 limonp/StringUtil.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/StringUtil.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/StringUtil.hpp
 SegmentTagged.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/SegmentTagged.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/SegmentTagged.hpp
 DictTrie.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/DictTrie.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/DictTrie.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/PreFilter.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/PreFilter.hpp
 Trie.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/Trie.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/Trie.hpp
 limonp/Logging.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/Logging.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/Logging.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/QuerySegment.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/QuerySegment.hpp
 algorithm
 -
 set
@@ -148,41 +134,41 @@ set
 cassert
 -
 limonp/Logging.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/Logging.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/Logging.hpp
 DictTrie.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/DictTrie.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/DictTrie.hpp
 SegmentBase.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/SegmentBase.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/SegmentBase.hpp
 FullSegment.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/FullSegment.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/FullSegment.hpp
 MixSegment.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/MixSegment.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/MixSegment.hpp
 Unicode.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/Unicode.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/Unicode.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/SegmentBase.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/SegmentBase.hpp
 limonp/Logging.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/Logging.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/Logging.hpp
 PreFilter.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/PreFilter.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/PreFilter.hpp
 cassert
 -
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/SegmentTagged.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/SegmentTagged.hpp
 SegmentBase.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/SegmentBase.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/SegmentBase.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/Trie.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/Trie.hpp
 vector
 -
 queue
 -
 limonp/StdExtension.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/StdExtension.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/StdExtension.hpp
 Unicode.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/Unicode.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/Unicode.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/Unicode.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/Unicode.hpp
 stdint.h
 -
 stdlib.h
@@ -194,9 +180,9 @@ vector
 ostream
 -
 limonp/LocalVector.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/LocalVector.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/LocalVector.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/LocalVector.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/LocalVector.hpp
 iostream
 -
 stdlib.h
@@ -206,7 +192,7 @@ assert.h
 string.h
 -
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/Logging.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/Logging.hpp
 sstream
 -
 iostream
@@ -218,7 +204,7 @@ cstdlib
 ctime
 -
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/StdExtension.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/StdExtension.hpp
 map
 -
 unordered_map
@@ -250,7 +236,7 @@ fstream
 sstream
 -
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/StringUtil.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/StringUtil.hpp
 fstream
 -
 iostream
@@ -290,23 +276,37 @@ iterator
 algorithm
 -
 StdExtension.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./cppjieba/limonp/StdExtension.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/limonp/StdExtension.hpp
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/parser.cc
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/parser.h
+string
+-
+vector
+-
+
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/util.hpp
+iostream
+-
+string
+-
+vector
+-
+fstream
+-
+boost/algorithm/string.hpp
+-
+../cppjieba/Jieba.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/cppjieba/Jieba.hpp
+
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/src/parser.cc
 iostream
 -
 fstream
 -
 boost/filesystem.hpp
 -
-parser.h
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/parser.h
-./common/util.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/./common/util.hpp
-
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/parser.h
-string
--
-vector
--
+../include/parser.h
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/parser.h
+../include/util.hpp
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/util.hpp
 

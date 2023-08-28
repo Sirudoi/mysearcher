@@ -1,8 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <boost/filesystem.hpp>
-#include "parser.h"
-#include "./common/util.hpp"
+#include "../include/parser.h"
+#include "../include/util.hpp"
 
 int main()
 {

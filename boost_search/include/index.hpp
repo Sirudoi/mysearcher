@@ -6,8 +6,8 @@
 #include <iostream>
 #include <unordered_map>
 
-#include "./common/util.hpp"
-#include "./common/log.hpp"
+#include "./util.hpp"
+#include "./log.hpp"
 
 namespace ns_index
 {

@@ -136,59 +136,59 @@ boost_parser/fast:
 	$(MAKE) -f CMakeFiles/boost_parser.dir/build.make CMakeFiles/boost_parser.dir/build
 .PHONY : boost_parser/fast
 
-parser.o: parser.cc.o
+src/parser.o: src/parser.cc.o
 
-.PHONY : parser.o
-
-# target to build an object file
-parser.cc.o:
-	$(MAKE) -f CMakeFiles/boost_parser.dir/build.make CMakeFiles/boost_parser.dir/parser.cc.o
-.PHONY : parser.cc.o
-
-parser.i: parser.cc.i
-
-.PHONY : parser.i
-
-# target to preprocess a source file
-parser.cc.i:
-	$(MAKE) -f CMakeFiles/boost_parser.dir/build.make CMakeFiles/boost_parser.dir/parser.cc.i
-.PHONY : parser.cc.i
-
-parser.s: parser.cc.s
-
-.PHONY : parser.s
-
-# target to generate assembly for a file
-parser.cc.s:
-	$(MAKE) -f CMakeFiles/boost_parser.dir/build.make CMakeFiles/boost_parser.dir/parser.cc.s
-.PHONY : parser.cc.s
-
-search.o: search.cc.o
-
-.PHONY : search.o
+.PHONY : src/parser.o
 
 # target to build an object file
-search.cc.o:
-	$(MAKE) -f CMakeFiles/boost_searcher.dir/build.make CMakeFiles/boost_searcher.dir/search.cc.o
-.PHONY : search.cc.o
+src/parser.cc.o:
+	$(MAKE) -f CMakeFiles/boost_parser.dir/build.make CMakeFiles/boost_parser.dir/src/parser.cc.o
+.PHONY : src/parser.cc.o
 
-search.i: search.cc.i
+src/parser.i: src/parser.cc.i
 
-.PHONY : search.i
+.PHONY : src/parser.i
 
 # target to preprocess a source file
-search.cc.i:
-	$(MAKE) -f CMakeFiles/boost_searcher.dir/build.make CMakeFiles/boost_searcher.dir/search.cc.i
-.PHONY : search.cc.i
+src/parser.cc.i:
+	$(MAKE) -f CMakeFiles/boost_parser.dir/build.make CMakeFiles/boost_parser.dir/src/parser.cc.i
+.PHONY : src/parser.cc.i
 
-search.s: search.cc.s
+src/parser.s: src/parser.cc.s
 
-.PHONY : search.s
+.PHONY : src/parser.s
 
 # target to generate assembly for a file
-search.cc.s:
-	$(MAKE) -f CMakeFiles/boost_searcher.dir/build.make CMakeFiles/boost_searcher.dir/search.cc.s
-.PHONY : search.cc.s
+src/parser.cc.s:
+	$(MAKE) -f CMakeFiles/boost_parser.dir/build.make CMakeFiles/boost_parser.dir/src/parser.cc.s
+.PHONY : src/parser.cc.s
+
+src/search.o: src/search.cc.o
+
+.PHONY : src/search.o
+
+# target to build an object file
+src/search.cc.o:
+	$(MAKE) -f CMakeFiles/boost_searcher.dir/build.make CMakeFiles/boost_searcher.dir/src/search.cc.o
+.PHONY : src/search.cc.o
+
+src/search.i: src/search.cc.i
+
+.PHONY : src/search.i
+
+# target to preprocess a source file
+src/search.cc.i:
+	$(MAKE) -f CMakeFiles/boost_searcher.dir/build.make CMakeFiles/boost_searcher.dir/src/search.cc.i
+.PHONY : src/search.cc.i
+
+src/search.s: src/search.cc.s
+
+.PHONY : src/search.s
+
+# target to generate assembly for a file
+src/search.cc.s:
+	$(MAKE) -f CMakeFiles/boost_searcher.dir/build.make CMakeFiles/boost_searcher.dir/src/search.cc.s
+.PHONY : src/search.cc.s
 
 # Help Target
 help:
@@ -200,12 +200,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... boost_searcher"
 	@echo "... boost_parser"
-	@echo "... parser.o"
-	@echo "... parser.i"
-	@echo "... parser.s"
-	@echo "... search.o"
-	@echo "... search.i"
-	@echo "... search.s"
+	@echo "... src/parser.o"
+	@echo "... src/parser.i"
+	@echo "... src/parser.s"
+	@echo "... src/search.o"
+	@echo "... src/search.i"
+	@echo "... src/search.s"
 .PHONY : help
 
 
