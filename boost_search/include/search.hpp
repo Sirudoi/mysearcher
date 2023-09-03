@@ -1,8 +1,10 @@
-#pragma once
+#ifndef INCLUDE_SEARCH_H
+#define INCLUDE_SEARCH_H
+
 #include <algorithm>
 #include <jsoncpp/json/json.h>
-#include "./index.hpp"
-#include "./util.hpp"
+#include "./index.h"
+// #include "./util.hpp"
 
 
 namespace ns_search
@@ -128,3 +130,5 @@ namespace ns_search
     };
     ns_index::Index* ns_search::Search::ins = nullptr;
 }
+
+#endif // INCLUDE_SEARCH_H

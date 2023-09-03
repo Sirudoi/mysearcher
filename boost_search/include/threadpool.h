@@ -1,6 +1,13 @@
 #ifndef INCLUDE_THREADPOOL_H
 #define INCLUDE_THREADPOOL_H
 
+#ifndef THREADPOOL_COUNT
+#define THREADPOOL_COUNT                                           \
+  ((std::max)(8u, std::thread::hardware_concurrency() > 0          \
+                      ? std::thread::hardware_concurrency() - 1    \
+                      : 0))
+#endif
+
 #include <functional>
 #include <memory>
 #include <mutex>
@@ -31,10 +38,11 @@ public:
     void join_queue(std::function<void()> fn) override;
     void shutdown() override;
     void thread_work();
+    bool empty();
+    int size();
 
 private:
-    ThreadPool();
-    explicit ThreadPool(size_t n);
+    explicit ThreadPool(size_t n = 2);
 
 private:
     friend class Worker;

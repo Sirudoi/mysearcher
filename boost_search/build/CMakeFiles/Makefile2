@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_sear
 CMakeFiles/boost_searcher.dir/all:
 	$(MAKE) -f CMakeFiles/boost_searcher.dir/build.make CMakeFiles/boost_searcher.dir/depend
 	$(MAKE) -f CMakeFiles/boost_searcher.dir/build.make CMakeFiles/boost_searcher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles --progress-num=3,4 "Built target boost_searcher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles --progress-num=6,7,8,9,10 "Built target boost_searcher"
 .PHONY : CMakeFiles/boost_searcher.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/boost_searcher.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/boost_searcher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/boost_searcher.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles 0
 .PHONY : CMakeFiles/boost_searcher.dir/rule
@@ -103,7 +103,7 @@ clean: CMakeFiles/boost_searcher.dir/clean
 CMakeFiles/boost_parser.dir/all:
 	$(MAKE) -f CMakeFiles/boost_parser.dir/build.make CMakeFiles/boost_parser.dir/depend
 	$(MAKE) -f CMakeFiles/boost_parser.dir/build.make CMakeFiles/boost_parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles --progress-num=1,2 "Built target boost_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target boost_parser"
 .PHONY : CMakeFiles/boost_parser.dir/all
 
 # Include target in all.
@@ -113,7 +113,7 @@ all: CMakeFiles/boost_parser.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/boost_parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/boost_parser.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles 0
 .PHONY : CMakeFiles/boost_parser.dir/rule

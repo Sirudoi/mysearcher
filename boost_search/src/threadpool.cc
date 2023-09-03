@@ -1,14 +1,10 @@
 #include "../include/threadpool.h"
-#include "./log.hpp"
+#include "../include/log.hpp"
 
 using namespace ns_log;
 
 ThreadPool* ThreadPool::ins_ = nullptr;
 std::mutex ThreadPool::mtx_;
-
-ThreadPool::ThreadPool() {
-
-}
 
 ThreadPool::ThreadPool(size_t n) {
     // 创建线程池
@@ -68,7 +64,7 @@ void ThreadPool::thread_work() {
 
         {
             std::unique_lock<std::mutex> lock(mtx_);
-            // 任务队列不为空, 或线程池停止, 表示有事件触发
+            // 任务队列不为空, 或线程池停止, 事表示有件触发
             cond_.wait(lock, [this] { return shutdown_ || !jobs_.empty(); });
 
             if (shutdown_ && jobs_.empty()) {
@@ -87,3 +83,12 @@ void ThreadPool::thread_work() {
         fn();
     }
 }
+
+bool ThreadPool::empty() {
+    return jobs_.empty();
+}
+
+int ThreadPool::size() {
+    return jobs_.size();
+}
+
