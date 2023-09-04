@@ -1,0 +1,9 @@
+#ifndef INCLUDE_MUDUO_EVENTLOOP_H
+#define INCLUDE_MUDUO_EVENTLOOP_H
+
+
+class EventLoop {
+
+};
+
+#endif // INCLUDE_MUDUO_EVENTLOOP_H

@@ -98,6 +98,7 @@ bool Index::BuildOneDocIndex(std::string per_doc) {
         return false;
     }
 
+    // LOG(INFO) << doc->title.size() << " " << doc->content.size() << " " << doc->url.size() << std::endl;
     BuildInverterIndex(*doc);
 
     return true;
@@ -168,52 +169,57 @@ bool Index::BuildInverterIndex(const DocInfo& doc) {
     // LOG(INFO) << doc.content.size() << " " << doc.title.size() << " " << doc.url.size() << std::endl;
 
     // 暂存分词和其词频的映射
-    std::unordered_map<std::string, WordCnt> cnt_map;
+    // std::unordered_map<std::string, WordCnt> cnt_map;
 
     // 1.对title分词
-    std::vector<std::string> title_key_word;
-    ns_util::JiebaUtil::CutKeyWord(doc.title, &title_key_word);
-
-    // 2.计算title每个分词的词频
-    for (auto& s : title_key_word) {
-        boost::to_lower(s);  // 统一将关键词转化为小写
-        cnt_map[s].title_cnt++;
+    {
+        std::unique_lock<std::mutex> lock(mtx_);
+        std::vector<std::string> title_key_word;
+        LOG(INFO) << "title:" << doc.title << std::endl;
+        ns_util::JiebaUtil::CutKeyWord(doc.title, &title_key_word);
     }
 
-    // 3.对content分词
-    std::vector<std::string> content_key_word;
-    ns_util::JiebaUtil::CutKeyWord(doc.content, &content_key_word);
 
-    // 4.计算content的每个分词的词频
-    for (auto& s : content_key_word) {
-        boost::to_lower(s);
-        cnt_map[s].content_cnt++;
-    }
+    // // 2.计算title每个分词的词频
+    // for (auto& s : title_key_word) {
+    //     boost::to_lower(s);  // 统一将关键词转化为小写
+    //     cnt_map[s].title_cnt++;
+    // }
+
+    // // 3.对content分词
+    // std::vector<std::string> content_key_word;
+    // ns_util::JiebaUtil::CutKeyWord(doc.content, &content_key_word);
+
+    // // 4.计算content的每个分词的词频
+    // for (auto& s : content_key_word) {
+    //     boost::to_lower(s);
+    //     cnt_map[s].content_cnt++;
+    // }
 
     // 5.构建这个文档每个分词的倒排拉链
-    {
-        // STL线程不安全
-        std::unique_lock<std::mutex> lock(mtx_);
-        for (auto& iter : cnt_map) {
-        // 新建一个倒排元素
-        // word是这个关键词、doc_id对应当前文档id、weight是该关键词与doc_id文档下的相关性
-        InvertedElem ivr;
-        ivr.word = iter.first;
-        ivr.doc_id = doc.doc_id;
-        ivr.weight = ns_util::RelativityUtil::CalWeight(
-            iter.second.title_cnt, iter.second.content_cnt);  // 计算相关性
+    // {
+    //     // STL线程不安全
+    //     std::unique_lock<std::mutex> lock(mtx_);
+    //     for (auto& iter : cnt_map) {
+    //     // 新建一个倒排元素
+    //     // word是这个关键词、doc_id对应当前文档id、weight是该关键词与doc_id文档下的相关性
+    //     InvertedElem ivr;
+    //     ivr.word = iter.first;
+    //     ivr.doc_id = doc.doc_id;
+    //     ivr.weight = ns_util::RelativityUtil::CalWeight(
+    //         iter.second.title_cnt, iter.second.content_cnt);  // 计算相关性
 
-        inverted_list_[iter.first].push_back(
-            std::move(ivr));  // 插入到这个关键词倒排拉链的vector中
-        }
-        // For Debug
-        ++count;
-        if (count == 100) {
-            sum += count;
-            count %= 100;
-            LOG(INFO) << " 索引已建立:" << sum << std::endl;
-        }
-    }
+    //     inverted_list_[iter.first].push_back(
+    //         std::move(ivr));  // 插入到这个关键词倒排拉链的vector中
+    //     }
+    //     // For Debug
+    //     ++count;
+    //     if (count == 100) {
+    //         sum += count;
+    //         count %= 100;
+    //         LOG(INFO) << " 索引已建立:" << sum << std::endl;
+    //     }
+    // }
 
 
     return true;

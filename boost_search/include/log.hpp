@@ -26,7 +26,8 @@ namespace ns_log
 
         //添加报错文件
         log_msg += "[";
-        log_msg += file_name;
+        size_t pos = file_name.rfind('/');
+        log_msg += file_name.substr(pos + 1);
         log_msg += "] ";
 
         //添加报错行

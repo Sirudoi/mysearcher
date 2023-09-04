@@ -4,7 +4,8 @@ project(boostSearch)
 # 设置C++版本为C++11
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
+#set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
+add_definitions("-Wall -g")
 
 # 设置最新的gcc和g++编译器路径 which gcc/g++
 set(CMAKE_C_COMPILE /opt/rh/devtoolset-7/root/usr/bin/gcc)
