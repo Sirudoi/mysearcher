@@ -126,6 +126,7 @@ void EPollPoller::updateChannel(Channel *channel) {
 
     // TODO:log
 
+    // 该channel为new, 或者曾经删除, 添加到epoll中
     if (index == kNew || index == kDeleted) {
         if (index == kNew) {
             int fd = channel->fd();
@@ -135,16 +136,19 @@ void EPollPoller::updateChannel(Channel *channel) {
         channel->set_index(kAdded);
         update(EPOLL_CTL_ADD, channel);
     }
-    // kAdded
+    // 该channel为add, 表示需要更改
     else {
-        // TODO
-        // delete
-        if () {
+        // TODO:log
 
+        // 如果当前Channel的事件为0, 表示需要从epoll中删除
+        int fd = channel->fd();
+        if (channel->isNoneEvent()) {
+            update(EPOLL_CTL_DEL, channel);
+            channel->set_index(kDeleted);
         }
-        // modify
+        // 否则更改
         else {
-
+            update(EPOLL_CTL_MOD, channel);
         }
     }
 }
