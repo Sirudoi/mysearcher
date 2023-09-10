@@ -10,7 +10,7 @@
 
 #include "noncopyable.h"
 
-class Thread : noncopyable {
+class Thread : public noncopyable {
 public:
     using ThreadFunc = std::function<void()>;
 
