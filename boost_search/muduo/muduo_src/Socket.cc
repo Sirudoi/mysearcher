@@ -57,6 +57,9 @@ int Socket::accept(InetAddress *peeraddr) {
 
 /**
  * @brief 关闭写端
+ *   #include <sys/socket.h>
+ *   int shutdown(int sockfd, int how);
+ *   SHUT_RD SHUT_WR SHUT_RDWR --> 分别关闭读 写 读写
  */
 void Socket::shutdownWrite() {
     if (::shutdown(sockfd_, SHUT_WR) < 0) {
