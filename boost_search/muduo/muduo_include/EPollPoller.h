@@ -19,7 +19,7 @@ public:
 
 private:
     // 初始epoll文件描述符数组大小
-    static const int initEventListSize = 16;
+    static const int kInitEventListSize = 16;
 
     // 获取有事件的Channel数组
     void fillActiveChannels(int numEvents, ChannelList *activeChannels) const;
@@ -30,7 +30,7 @@ private:
     using EventList = std::vector<struct epoll_event>;
 
     int epollfd_;
-    EventList eventlist_;
+    EventList events_;
 };
 
 #endif // INCLUDE_MUDUO_EPOLLPOLLER_H

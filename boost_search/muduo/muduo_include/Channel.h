@@ -9,8 +9,8 @@
 
 class Channel : public noncopyable {
 public:
-    using EventCallBack = std::functional<void()>;
-    using ReadEventCalBack = std::functional<void(Timestamp)>;
+    using EventCallBack = std::function<void()>;
+    using ReadEventCallBack = std::function<void(Timestamp)>;
 
     Channel(EventLoop *loop, int fd);
     virtual ~Channel();
@@ -19,7 +19,7 @@ public:
     void handleEvent(Timestamp receiveTime);
 
     // 设置对应回调事件
-    void setReadCallback(ReadEventCalBack callback) { readCallBack_ = std::move(callback); }
+    void setReadCallback(ReadEventCallBack callback) { readCallBack_ = std::move(callback); }
     void setWriteCallback(EventCallBack callback) { writeCallBack_ = std::move(callback); }
     void setCloseCallback(EventCallBack callback) { closeCallBack_ = std::move(callback); }
     void setErrorCallback(EventCallBack callback) { errorCallBack_ = std::move(callback); }
@@ -49,6 +49,10 @@ public:
     int index() { return index_; }
     void set_index(int idx) { index_ = idx; }
 
+    // one loop per thread
+    EventLoop *ownerLoop() { return loop_; }
+    void remove();
+
 private:
     void update();
     void handleEventWithGuard(Timestamp receiveTime);
@@ -59,11 +63,15 @@ private:
     int revents_;
     int index_;
 
+    // TODO
+    std::weak_ptr<void> tie_;
+    bool tied_;
+
     static const int kNoneEvent;
     static const int kReadEvent;
     static const int kWriteEvent;
 
-    ReadEventCalBack readCallBack_;     // 读事件回调
+    ReadEventCallBack readCallBack_;     // 读事件回调
     EventCallBack writeCallBack_;       // 写事件回调
     EventCallBack closeCallBack_;       // 关闭事件回调
     EventCallBack errorCallBack_;       // 错误事件回调

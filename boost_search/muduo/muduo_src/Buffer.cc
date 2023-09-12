@@ -51,7 +51,7 @@ std::string Buffer::retrieveAsString(size_t len) {
  * @brief       检查缓冲区剩余容量是否足够写入, 不够则扩容
  * @param len   需要写入的长度
  */
-void ensureWritableBytes(size_t len) {
+void Buffer::ensureWritableBytes(size_t len) {
     if (writableBytes() < len) {
         makeSpace(len); // 扩容
     }
@@ -60,7 +60,7 @@ void ensureWritableBytes(size_t len) {
 /**
  * @brief 把[data, data+len]内存上的数据添加到writable缓冲区当中
  */
-void append(const char *data, size_t len) {
+void Buffer::append(const char *data, size_t len) {
     ensureWritableBytes(len);
     std::copy(data, data+len, beginWrite());
     writerIndex_ += len;
@@ -70,7 +70,7 @@ void append(const char *data, size_t len) {
  * @brief       确认len字节数据是否能写入缓冲区, 能写入则将可读取数据前移动, 否则扩容
  * @param len   len字节数据
  */
-void makeSpace(size_t len) {
+void Buffer::makeSpace(size_t len) {
     /**
     * | kCheapPrepend | 已读取 | 待读取 | 可写入 |
     * | kCheapPrepend | 已读取 | 待读取 |  len          |

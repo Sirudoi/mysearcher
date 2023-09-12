@@ -5,16 +5,19 @@
 #include <atomic>
 #include <memory>
 #include <mutex>
+#include <functional>
+
 
 #include "noncopyable.h"
 #include "Timestamp.h"
+#include "CurrentThread.h"
 
 class Channel;
 class Poller;
 
 class EventLoop : public noncopyable {
 public:
-    using Functor = std::functional<void()>;
+    using Functor = std::function<void()>;
 
     EventLoop();
     ~EventLoop();
@@ -25,7 +28,7 @@ public:
     void quit();
 
     // epoll_wait返回的时间
-    Timestamp pollReturnTime() const { pollRetureTime_; }
+    Timestamp pollReturnTime() const { return pollRetureTime_; }
 
     // 在当前loop中执行
     void runInLoop(Functor cb);
@@ -57,7 +60,7 @@ private:
 
     const pid_t threadId_;                      // 记录创建该EventLoop的线程id
 
-    int wakeupfd_;                              // eventfd的文件描述符
+    int wakeupFd_;                              // eventfd的文件描述符
     std::unique_ptr<Channel> wakeupChannel_;    // eventfd绑定的Channel
 
     ChannelList activeChannels_;                // 获取epoll返回的所有有事件就绪的Channel

@@ -4,7 +4,6 @@
 #include <unistd.h>
 
 #include "../muduo_include/Acceptor.h"
-#include "../muduo_include/Logger.h"
 #include "../muduo_include/InetAddress.h"
 
 /**

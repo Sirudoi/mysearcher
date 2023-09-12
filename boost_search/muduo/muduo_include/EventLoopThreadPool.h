@@ -18,6 +18,8 @@ public:
     EventLoopThreadPool(EventLoop *baseLoop, const std::string &nameArg);
     ~EventLoopThreadPool();
 
+    void start(const ThreadInitCallback &cb = ThreadInitCallback());
+
     void setThreadNum(int numThreads) { numThreads_ = numThreads; }
     // 默认以轮询方式, 分配Channel
     EventLoop *getNextLoop();

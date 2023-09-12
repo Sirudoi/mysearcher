@@ -61,30 +61,30 @@ void Channel::handleEventWithGuard(Timestamp receiveTime)
 
     // EPOLLHUP表示连接关闭
     if ((revents_ & EPOLLHUP) && !(revents_ & EPOLLIN)) {
-        if (closeCallback_) {
+        if (closeCallBack_) {
             // 执行关闭事件的回调函数
-            closeCallback_();
+            closeCallBack_();
         }
     }
     // EPOLLERR表示发生错误
     if (revents_ & EPOLLERR) {
-        if (errorCallback_) {
+        if (errorCallBack_) {
             //  执行错误事件的回调函数
-            errorCallback_();
+            errorCallBack_();
         }
     }
     // EPOLLIN表示读, EPOLLPRI表示紧急事件
     if (revents_ & (EPOLLIN | EPOLLPRI)) {
-        if (readCallback_) {
+        if (readCallBack_) {
             // 执行读事件的回调函数
-            readCallback_(receiveTime);
+            readCallBack_(receiveTime);
         }
     }
     // EPOLLOUT表示写
     if (revents_ & EPOLLOUT) {
-        if (writeCallback_) {
+        if (writeCallBack_) {
             // 执行写事件的回调函数
-            writeCallback_();
+            writeCallBack_();
         }
     }
 }

@@ -64,7 +64,7 @@ Timestamp EPollPoller::poll(int timeoutMs, ChannelList *activeChannels) {
  * @param numEvents         就绪的Channel数量
  * @param activeChannels    就绪的Channel数组
  */
-void EPollPoller::fillActiveChannels(int numEvents, ChannelList *activeChannels) {
+void EPollPoller::fillActiveChannels(int numEvents, ChannelList *activeChannels) const {
     for (int i = 0; i < numEvents; ++i) {
         Channel *channel = static_cast<Channel *>(events_[i].data.ptr);
         channel->set_revents(events_[i].events);

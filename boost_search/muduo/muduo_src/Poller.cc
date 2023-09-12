@@ -2,7 +2,7 @@
 #include "../muduo_include/Channel.h"
 
 Poller::Poller(EventLoop *loop)
-    : loop_(loop) {
+    : ownerLoop_(loop) {
 
 }
 

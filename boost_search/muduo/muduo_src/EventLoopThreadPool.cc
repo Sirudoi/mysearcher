@@ -36,7 +36,7 @@ void EventLoopThreadPool::start(const ThreadInitCallback &cb) {
     }
 
     // 只有baseLoop一个事件循环, 则让baseLoop执行上层回调
-    if(numThreads_ == 0 && cb) {
+    if (numThreads_ == 0 && cb) {
         cb(baseLoop_);
     }
 }

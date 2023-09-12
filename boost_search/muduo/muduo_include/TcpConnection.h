@@ -5,7 +5,7 @@
 #include <string>
 #include <atomic>
 
-#include "Callback.h"
+#include "Callbacks.h"
 #include "noncopyable.h"
 #include "InetAddress.h"
 #include "Buffer.h"
@@ -15,7 +15,7 @@ class EventLoop;
 class Socket;
 
 // std::enable_shared_from_this<TcpConnection>继承之后, 该类内部可以通过shared_from_this()来获取一个该类的智能指针
-class TcpConnect : public noncopyable, public std::enable_shared_from_this<TcpConnection> {
+class TcpConnection : public noncopyable, public std::enable_shared_from_this<TcpConnection> {
 public:
     TcpConnection(EventLoop *loop,
                   const std::string &nameArg,

@@ -1,10 +1,10 @@
-#ifndef INCLUDE_MUDUO_CALLBACK_H
-#define INCLUDE_MUDUO_CALLBACK_H
+#ifndef INCLUDE_MUDUO_CALLBACKS_H
+#define INCLUDE_MUDUO_CALLBACKS_H
 
 #include <memory>
 #include <functional>
 
-// class Buffer;
+class Buffer;
 class TcpConnection;
 class Timestamp;
 
@@ -19,4 +19,4 @@ using MessageCallback = std::function<void(const TcpConnectionPtr &,
                                            Timestamp)>;
 
 
-#endif // INCLUDE_MUDUO_CALLBACK_H
+#endif // INCLUDE_MUDUO_CALLBACKS_H
