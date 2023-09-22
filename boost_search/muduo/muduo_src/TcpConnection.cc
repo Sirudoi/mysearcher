@@ -50,6 +50,11 @@ TcpConnection::TcpConnection(EventLoop *loop,
     socket_->setKeepAlive(true);
 }
 
+TcpConnection::~TcpConnection() {
+    // LOG_INFO("TcpConnection::dtor[%s] at fd=%d state=%d\n", name_.c_str(), channel_->fd(), (int)state_);
+}
+
+
 /**
  * @brief       发送buf缓冲区的数据
  * @param buf   待发送的缓冲区

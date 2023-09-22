@@ -2,9 +2,9 @@
 
 #include "../muduo_include/Channel.h"
 
-static const int kNoneEvent = 0;
-static const int kReadEvent = EPOLLIN | EPOLLPRI; // 读事件和紧急事件
-static const int kWriteEvent = EPOLLOUT;
+const int Channel::kNoneEvent = 0;
+const int Channel::kReadEvent = EPOLLIN | EPOLLPRI; // 读事件和紧急事件
+const int Channel::kWriteEvent = EPOLLOUT;
 
 Channel::Channel(EventLoop *loop, int fd)
     : loop_(loop)
