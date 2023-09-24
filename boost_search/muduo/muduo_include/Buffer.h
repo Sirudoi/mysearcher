@@ -27,8 +27,9 @@ public:
     const char *peek() const { return begin() + readerIndex_; }
 
     // 更改索引
-    void retrieve(size_t len);  // 读取之后更改索引
-    void retrieveAll();         // 复位索引
+    void retrieve(size_t len);                      // 读取之后更改索引
+    void retrieveAll();                             // 复位索引
+    void Buffer::retrieveUntil(const char* end);    // 更新索引到end位置
  
     // 读取
     std::string retrieveAllAsString();
@@ -36,6 +37,7 @@ public:
 
     void ensureWritableBytes(size_t len);
     void append(const char *data, size_t len);
+    void append(const std::string& data);
 
     // vector底层数组可写入位置的地址
     char *beginWrite() { return begin() + writerIndex_; }
@@ -44,6 +46,11 @@ public:
     // 读写数据
     ssize_t readFd(int fd, int *saveErrno);
     ssize_t writeFd(int fd, int *saveErrno);
+
+    // 寻找\r\n标识符
+    const char* findCRLF(const char* start) const;
+    const char* findCRLF() const;
+
 
 private:
     // vector底层数组首元素的地址
@@ -57,6 +64,8 @@ private:
     std::vector<char> buffer_;  // buffer采用一个字符数组
     size_t readerIndex_;        // 读位置索引
     size_t writerIndex_;        // 写位置索引
+
+    static const char kCRLF[];  // http协议结尾的回车换行符 
 };
 
 #endif // INCLUDE_MUDUO_BUFFER_H
