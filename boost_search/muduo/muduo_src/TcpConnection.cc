@@ -56,21 +56,49 @@ TcpConnection::~TcpConnection() {
 
 
 /**
- * @brief       发送buf缓冲区的数据
- * @param buf   待发送的缓冲区
+ * @brief       发送buf缓冲区的数据到对端
+ * @param buf   std::string 待发送的缓冲区
  */
 void TcpConnection::send(const std::string &buf) {
+    send(static_cast<const char*>(buf.data()), buf.size());
+    // if (state_ == kConnected) {
+    //     // 如果当前事件循环属于这个线程
+    //     if (loop_->isInLoopThread()) {
+    //         // 在当前事件循环执行
+    //         sendInLoop(buf.c_str(), buf.size());
+    //     }
+    //     else {
+    //         // 否则执行runInLoop -> runInLoop内部会检查当前eventloop是否属于当前thread
+    //         // 属于会执行回调方法, 不属于则会直接唤醒当前eventloop所在线程, 让其执行回调方法
+    //         loop_->runInLoop(
+    //             std::bind(&TcpConnection::sendInLoop, this, buf.c_str(), buf.size()));
+    //     }
+    // }
+}
+
+/**
+ * @brief       发送buf缓冲区的数据到对端
+ * @param buf   Buffer 待发送的缓冲区
+ */
+void TcpConnection::send(Buffer* message) {
+    send(static_cast<const char*>(message->peek()), message->readableBytes());
+}
+
+/**
+ * @brief       发送data指针后面len长度的数据到对端
+ */
+void TcpConnection::send(const char* data, int len) {
     if (state_ == kConnected) {
         // 如果当前事件循环属于这个线程
         if (loop_->isInLoopThread()) {
             // 在当前事件循环执行
-            sendInLoop(buf.c_str(), buf.size());
+            sendInLoop(data, len);
         }
         else {
             // 否则执行runInLoop -> runInLoop内部会检查当前eventloop是否属于当前thread
             // 属于会执行回调方法, 不属于则会直接唤醒当前eventloop所在线程, 让其执行回调方法
             loop_->runInLoop(
-                std::bind(&TcpConnection::sendInLoop, this, buf.c_str(), buf.size()));
+                std::bind(&TcpConnection::sendInLoop, this, data, len));
         }
     }
 }

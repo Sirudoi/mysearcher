@@ -2,6 +2,7 @@
 #define MUDUO_NET_HTTPSERVER_INCLUDE
 
 #include "../../muduo_include/TcpServer.h"
+#include <functional>
 
 class HttpRequest;
 class HttpResponse;
@@ -11,9 +12,9 @@ public:
     using HttpCallback = std::function<void(const HttpRequest&, HttpResponse*)>;
 
     HttpServer(EventLoop* loop,
-             const InetAddress& listenAddr,
-             const std::string& name,
-             TcpServer::Option option = TcpServer::kNoReusePort);
+               const InetAddress& listenAddr,
+               const std::string& name,
+               TcpServer::Option option = TcpServer::kNoReusePort);
 
     EventLoop* getLoop() const { return server_.getLoop(); }
 

@@ -17,9 +17,11 @@ public:
         , writerIndex_(kCheapPrepend)
     {}
 
-    // 获取缓冲区不同位置的长度
+    // 获取缓冲区中可读取区域的字节数
     size_t readableBytes() const { return writerIndex_ - readerIndex_; }
+    // 获取缓冲区中可写入区域的字节数
     size_t writableBytes() const { return buffer_.size() - writerIndex_; }
+    // 获取缓冲区已读区区域的字节数
     size_t prependableBytes() const { return readerIndex_; }
 
     // 返回buffer可读取内容的首地址
@@ -29,7 +31,7 @@ public:
     // 更改索引
     void retrieve(size_t len);                      // 读取之后更改索引
     void retrieveAll();                             // 复位索引
-    void Buffer::retrieveUntil(const char* end);    // 更新索引到end位置
+    void retrieveUntil(const char* end);    // 更新索引到end位置
  
     // 读取
     std::string retrieveAllAsString();

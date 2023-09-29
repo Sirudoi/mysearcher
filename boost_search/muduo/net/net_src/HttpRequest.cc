@@ -3,6 +3,16 @@
 HttpRequest::HttpRequest()
     : method_(HttpRequest::kInvalid), version_(HttpRequest::kUnknown) {}
 
+HttpRequest::~HttpRequest() {}
+
+void HttpRequest::setVersion(Version v) {
+    version_ = v;
+}
+
+HttpRequest::Version HttpRequest::getVersion() const {
+    return version_;
+}
+
 /**
  * @brief       设置本次请求的方法
  * @param start 起始迭代器

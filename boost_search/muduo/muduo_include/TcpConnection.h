@@ -10,6 +10,8 @@
 #include "InetAddress.h"
 #include "Buffer.h"
 
+#include <boost/any.hpp>
+
 class Channel;
 class EventLoop;
 class Socket;
@@ -40,6 +42,8 @@ public:
 
     // 发送数据
     void send(const std::string &buf);
+    void send(Buffer* message);
+    void send(const char* data, int len);
     // 关闭连接 -- 关闭服务器写端的操作, 半关闭状态
     void shutdown();
 
@@ -54,6 +58,12 @@ public:
     { closeCallback_ = cb; }
     void setHighWaterMarkCallback(const HighWaterMarkCallback &cb, size_t highWaterMark)
     { highWaterMarkCallback_ = cb; highWaterMark_ = highWaterMark; }
+
+
+    // HttpContext获取和设置
+    const boost::any& getContext() const { return context_; }
+    void setContext(const boost::any& context) { context_ = context; }
+    boost::any* getMutableContext() { return &context_; }
 
 private:
     enum StateE {
@@ -94,6 +104,7 @@ private:
 
     Buffer inputBuffer_;    // 接收缓冲区
     Buffer outputBuffer_;   // 发送缓冲区
+    boost::any context_;    // 保存本次连接的HttpContext, 即HttpContext类
 
     // inputBuffer_.readFd()   --> 从fd中读取内核缓冲区的数据到inputBuffer_
     // outputBuffer_.writeFd() --> 从outputBuffer_写入数据到fd的内核缓冲区

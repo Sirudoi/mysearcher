@@ -441,6 +441,102 @@ CMakeFiles/mymuduo.dir/muduo_src/InetAddress.cc.o.provides: CMakeFiles/mymuduo.d
 CMakeFiles/mymuduo.dir/muduo_src/InetAddress.cc.o.provides.build: CMakeFiles/mymuduo.dir/muduo_src/InetAddress.cc.o
 
 
+CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o: ../net/net_src/HttpResponse.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o"
+	/opt/rh/devtoolset-9/root/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o -c /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_src/HttpResponse.cc
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.i"
+	/opt/rh/devtoolset-9/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_src/HttpResponse.cc > CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.i
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.s"
+	/opt/rh/devtoolset-9/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_src/HttpResponse.cc -o CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.s
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o.requires:
+
+.PHONY : CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o.requires
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o.provides: CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o.requires
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o.provides.build
+.PHONY : CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o.provides
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o.provides.build: CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o
+
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o: ../net/net_src/HttpRequest.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o"
+	/opt/rh/devtoolset-9/root/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o -c /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_src/HttpRequest.cc
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.i"
+	/opt/rh/devtoolset-9/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_src/HttpRequest.cc > CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.i
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.s"
+	/opt/rh/devtoolset-9/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_src/HttpRequest.cc -o CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.s
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o.requires:
+
+.PHONY : CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o.requires
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o.provides: CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o.requires
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o.provides.build
+.PHONY : CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o.provides
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o.provides.build: CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o
+
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o: ../net/net_src/HttpServer.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o"
+	/opt/rh/devtoolset-9/root/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o -c /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_src/HttpServer.cc
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.i"
+	/opt/rh/devtoolset-9/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_src/HttpServer.cc > CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.i
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.s"
+	/opt/rh/devtoolset-9/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_src/HttpServer.cc -o CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.s
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o.requires:
+
+.PHONY : CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o.requires
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o.provides: CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o.requires
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o.provides.build
+.PHONY : CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o.provides
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o.provides.build: CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o
+
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o: CMakeFiles/mymuduo.dir/flags.make
+CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o: ../net/net_src/HttpContext.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o"
+	/opt/rh/devtoolset-9/root/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o -c /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_src/HttpContext.cc
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.i"
+	/opt/rh/devtoolset-9/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_src/HttpContext.cc > CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.i
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.s"
+	/opt/rh/devtoolset-9/root/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_src/HttpContext.cc -o CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.s
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o.requires:
+
+.PHONY : CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o.requires
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o.provides: CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o.requires
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o.provides.build
+.PHONY : CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o.provides
+
+CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o.provides.build: CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o
+
+
 # Object files for target mymuduo
 mymuduo_OBJECTS = \
 "CMakeFiles/mymuduo.dir/muduo_src/EventLoopThreadPool.cc.o" \
@@ -458,7 +554,11 @@ mymuduo_OBJECTS = \
 "CMakeFiles/mymuduo.dir/muduo_src/TcpServer.cc.o" \
 "CMakeFiles/mymuduo.dir/muduo_src/EventLoopThread.cc.o" \
 "CMakeFiles/mymuduo.dir/muduo_src/DefaultPoller.cc.o" \
-"CMakeFiles/mymuduo.dir/muduo_src/InetAddress.cc.o"
+"CMakeFiles/mymuduo.dir/muduo_src/InetAddress.cc.o" \
+"CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o" \
+"CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o" \
+"CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o" \
+"CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o"
 
 # External object files for target mymuduo
 mymuduo_EXTERNAL_OBJECTS =
@@ -479,9 +579,13 @@ mymuduo_EXTERNAL_OBJECTS =
 ../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/muduo_src/EventLoopThread.cc.o
 ../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/muduo_src/DefaultPoller.cc.o
 ../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/muduo_src/InetAddress.cc.o
+../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o
+../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o
+../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o
+../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o
 ../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/build.make
 ../lib/libmymuduo.so: CMakeFiles/mymuduo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library ../lib/libmymuduo.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX shared library ../lib/libmymuduo.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mymuduo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -505,6 +609,10 @@ CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/muduo_src/TcpServer.cc.o
 CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/muduo_src/EventLoopThread.cc.o.requires
 CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/muduo_src/DefaultPoller.cc.o.requires
 CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/muduo_src/InetAddress.cc.o.requires
+CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o.requires
+CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o.requires
+CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o.requires
+CMakeFiles/mymuduo.dir/requires: CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o.requires
 
 .PHONY : CMakeFiles/mymuduo.dir/requires
 

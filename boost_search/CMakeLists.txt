@@ -15,10 +15,17 @@ set(CMAKE_CXX_COMPILE /opt/rh/devtoolset-7/root/usr/bin/g++)
 # 获取当前源文件路径
 get_filename_component(PROJ_ROOT "${CMAKE_CURRENT_SOURCE_DIR}" ABSOLUTE)
 
+# 添加接口库
+# add_library(${PROJ_ROOT}/muduo/lib/libmymuduo.so MYMUDUO)
+
+# target_include_directories(${PROJ_ROOT}/muduo/lib/libmymuduo.so INTERFACE include)
+
+set (MUDUOLIB_PATH ${PROJ_ROOT}/muduo/lib)
+
 # parser模块源文件
 set(PARSER_SOURCES
     ${PROJ_ROOT}/src/parser.cc
-    ${PROJ_ROOT}/src/threadpool.cc
+    # ${PROJ_ROOT}/src/threadpool.cc
     ${PROJ_ROOT}/src/index.cc
     ${PROJ_ROOT}/src/util.cc
 )
@@ -27,25 +34,24 @@ set(PARSER_SOURCES
 set(SEARCH_SOURCES
     ${PROJ_ROOT}/src/search.cc
     ${PROJ_ROOT}/src/index.cc
-    ${PROJ_ROOT}/src/threadpool.cc
+    # ${PROJ_ROOT}/src/threadpool.cc
     ${PROJ_ROOT}/src/util.cc
-
 )
 
 # parser头文件
 set(PARSER_HEADERS
     ${PROJ_ROOT}/include/index.h
     ${PROJ_ROOT}/include/parser.h
-    ${PROJ_ROOT}/include/threadpool.h
+    # ${PROJ_ROOT}/include/threadpool.h
     ${PROJ_ROOT}/include/log.hpp
     ${PROJ_ROOT}/include/util.h
 )
 
 set(SEARCHER_HEADERS
     ${PROJ_ROOT}/include/index.h
-    ${PROJ_ROOT}/include/threadpool.h
+    # ${PROJ_ROOT}/include/threadpool.h
     ${PROJ_ROOT}/include/search.hpp
-    ${PROJ_ROOT}/include/httplib.h
+    # ${PROJ_ROOT}/include/httplib.h
     ${PROJ_ROOT}/include/log.hpp
     ${PROJ_ROOT}/include/util.h
 )
@@ -56,4 +62,4 @@ add_executable(boost_searcher ${SEARCH_SOURCES} ${SEARCHER_HEADERS})
 
 # 连接库
 target_link_libraries(boost_parser boost_system boost_filesystem pthread)
-target_link_libraries(boost_searcher jsoncpp pthread)
+target_link_libraries(boost_searcher jsoncpp pthread ${MUDUOLIB_PATH}/libmymuduo.so)

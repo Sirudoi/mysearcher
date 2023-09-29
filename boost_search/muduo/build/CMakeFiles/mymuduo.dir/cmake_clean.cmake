@@ -15,6 +15,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/mymuduo.dir/muduo_src/EventLoopThread.cc.o"
   "CMakeFiles/mymuduo.dir/muduo_src/DefaultPoller.cc.o"
   "CMakeFiles/mymuduo.dir/muduo_src/InetAddress.cc.o"
+  "CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o"
+  "CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o"
+  "CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o"
+  "CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o"
   "../lib/libmymuduo.pdb"
   "../lib/libmymuduo.so"
 )

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/boost_parser.dir/src/parser.cc.o"
-  "CMakeFiles/boost_parser.dir/src/threadpool.cc.o"
   "CMakeFiles/boost_parser.dir/src/index.cc.o"
   "CMakeFiles/boost_parser.dir/src/util.cc.o"
   "boost_parser.pdb"

@@ -220,36 +220,6 @@ src/search.cc.s:
 	$(MAKE) -f CMakeFiles/boost_searcher.dir/build.make CMakeFiles/boost_searcher.dir/src/search.cc.s
 .PHONY : src/search.cc.s
 
-src/threadpool.o: src/threadpool.cc.o
-
-.PHONY : src/threadpool.o
-
-# target to build an object file
-src/threadpool.cc.o:
-	$(MAKE) -f CMakeFiles/boost_searcher.dir/build.make CMakeFiles/boost_searcher.dir/src/threadpool.cc.o
-	$(MAKE) -f CMakeFiles/boost_parser.dir/build.make CMakeFiles/boost_parser.dir/src/threadpool.cc.o
-.PHONY : src/threadpool.cc.o
-
-src/threadpool.i: src/threadpool.cc.i
-
-.PHONY : src/threadpool.i
-
-# target to preprocess a source file
-src/threadpool.cc.i:
-	$(MAKE) -f CMakeFiles/boost_searcher.dir/build.make CMakeFiles/boost_searcher.dir/src/threadpool.cc.i
-	$(MAKE) -f CMakeFiles/boost_parser.dir/build.make CMakeFiles/boost_parser.dir/src/threadpool.cc.i
-.PHONY : src/threadpool.cc.i
-
-src/threadpool.s: src/threadpool.cc.s
-
-.PHONY : src/threadpool.s
-
-# target to generate assembly for a file
-src/threadpool.cc.s:
-	$(MAKE) -f CMakeFiles/boost_searcher.dir/build.make CMakeFiles/boost_searcher.dir/src/threadpool.cc.s
-	$(MAKE) -f CMakeFiles/boost_parser.dir/build.make CMakeFiles/boost_parser.dir/src/threadpool.cc.s
-.PHONY : src/threadpool.cc.s
-
 src/util.o: src/util.cc.o
 
 .PHONY : src/util.o
@@ -299,9 +269,6 @@ help:
 	@echo "... src/search.o"
 	@echo "... src/search.i"
 	@echo "... src/search.s"
-	@echo "... src/threadpool.o"
-	@echo "... src/threadpool.i"
-	@echo "... src/threadpool.s"
 	@echo "... src/util.o"
 	@echo "... src/util.i"
 	@echo "... src/util.s"

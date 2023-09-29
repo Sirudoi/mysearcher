@@ -137,14 +137,14 @@ bool IntegrateDoc(const std::string &output_path, const std::vector<DocInfo_t> &
 bool ParseTitle(const std::string &result, std::string &title)
 {
     // 寻找<title>的位置
-    int begin = result.find("<title>");
+    size_t begin = result.find("<title>");
     if (begin == std::string::npos)
     {
         return false;
     }
 
     // 寻找</title>的位置
-    int end = result.find("</title>");
+    size_t end = result.find("</title>");
     if (end == std::string::npos)
     {
         return false;

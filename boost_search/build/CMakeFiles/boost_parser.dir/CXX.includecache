@@ -318,34 +318,10 @@ condition_variable
 ./util.h
 /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/./util.h
 
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/log.hpp
-iostream
--
-string
--
-
 /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/parser.h
 string
 -
 vector
--
-
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/threadpool.h
-functional
--
-memory
--
-mutex
--
-thread
--
-atomic
--
-condition_variable
--
-vector
--
-list
 -
 
 /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/util.h
@@ -365,8 +341,6 @@ vector
 /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/src/index.cc
 ../include/index.h
 /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/index.h
-../include/threadpool.h
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/threadpool.h
 future
 -
 
@@ -381,12 +355,6 @@ boost/filesystem.hpp
 /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/parser.h
 ../include/util.h
 /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/util.h
-
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/src/threadpool.cc
-../include/threadpool.h
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/threadpool.h
-../include/log.hpp
-/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/include/log.hpp
 
 /home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/src/util.cc
 ../include/util.h

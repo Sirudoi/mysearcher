@@ -4,7 +4,6 @@
 CMakeFiles/boost_parser.dir/src/index.cc.o: ../include/./log.hpp
 CMakeFiles/boost_parser.dir/src/index.cc.o: ../include/./util.h
 CMakeFiles/boost_parser.dir/src/index.cc.o: ../include/index.h
-CMakeFiles/boost_parser.dir/src/index.cc.o: ../include/threadpool.h
 CMakeFiles/boost_parser.dir/src/index.cc.o: ../src/index.cc
 
 CMakeFiles/boost_parser.dir/src/parser.cc.o: ../cppjieba/DictTrie.hpp
@@ -29,10 +28,6 @@ CMakeFiles/boost_parser.dir/src/parser.cc.o: ../cppjieba/limonp/StringUtil.hpp
 CMakeFiles/boost_parser.dir/src/parser.cc.o: ../include/parser.h
 CMakeFiles/boost_parser.dir/src/parser.cc.o: ../include/util.h
 CMakeFiles/boost_parser.dir/src/parser.cc.o: ../src/parser.cc
-
-CMakeFiles/boost_parser.dir/src/threadpool.cc.o: ../include/log.hpp
-CMakeFiles/boost_parser.dir/src/threadpool.cc.o: ../include/threadpool.h
-CMakeFiles/boost_parser.dir/src/threadpool.cc.o: ../src/threadpool.cc
 
 CMakeFiles/boost_parser.dir/src/util.cc.o: ../cppjieba/DictTrie.hpp
 CMakeFiles/boost_parser.dir/src/util.cc.o: ../cppjieba/FullSegment.hpp

@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/boost_searcher.dir/src/search.cc.o"
   "CMakeFiles/boost_searcher.dir/src/index.cc.o"
-  "CMakeFiles/boost_searcher.dir/src/threadpool.cc.o"
   "CMakeFiles/boost_searcher.dir/src/util.cc.o"
   "boost_searcher.pdb"
   "boost_searcher"

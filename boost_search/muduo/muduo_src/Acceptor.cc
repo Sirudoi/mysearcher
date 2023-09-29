@@ -13,7 +13,7 @@
 static int createNonblocking() {
     int sockfd = ::socket(AF_INET, SOCK_STREAM | SOCK_NONBLOCK | SOCK_CLOEXEC, IPPROTO_TCP);
     if (sockfd < 0) {
-        // TODO - log
+        // ns_log::LOG(ns_log::WARN) << "createNonblocking failed" << std::endl;
     }
     return sockfd;
 }

@@ -555,6 +555,114 @@ muduo_src/Thread.cc.s:
 	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/muduo_src/Thread.cc.s
 .PHONY : muduo_src/Thread.cc.s
 
+net/net_src/HttpContext.o: net/net_src/HttpContext.cc.o
+
+.PHONY : net/net_src/HttpContext.o
+
+# target to build an object file
+net/net_src/HttpContext.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.o
+.PHONY : net/net_src/HttpContext.cc.o
+
+net/net_src/HttpContext.i: net/net_src/HttpContext.cc.i
+
+.PHONY : net/net_src/HttpContext.i
+
+# target to preprocess a source file
+net/net_src/HttpContext.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.i
+.PHONY : net/net_src/HttpContext.cc.i
+
+net/net_src/HttpContext.s: net/net_src/HttpContext.cc.s
+
+.PHONY : net/net_src/HttpContext.s
+
+# target to generate assembly for a file
+net/net_src/HttpContext.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpContext.cc.s
+.PHONY : net/net_src/HttpContext.cc.s
+
+net/net_src/HttpRequest.o: net/net_src/HttpRequest.cc.o
+
+.PHONY : net/net_src/HttpRequest.o
+
+# target to build an object file
+net/net_src/HttpRequest.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.o
+.PHONY : net/net_src/HttpRequest.cc.o
+
+net/net_src/HttpRequest.i: net/net_src/HttpRequest.cc.i
+
+.PHONY : net/net_src/HttpRequest.i
+
+# target to preprocess a source file
+net/net_src/HttpRequest.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.i
+.PHONY : net/net_src/HttpRequest.cc.i
+
+net/net_src/HttpRequest.s: net/net_src/HttpRequest.cc.s
+
+.PHONY : net/net_src/HttpRequest.s
+
+# target to generate assembly for a file
+net/net_src/HttpRequest.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpRequest.cc.s
+.PHONY : net/net_src/HttpRequest.cc.s
+
+net/net_src/HttpResponse.o: net/net_src/HttpResponse.cc.o
+
+.PHONY : net/net_src/HttpResponse.o
+
+# target to build an object file
+net/net_src/HttpResponse.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.o
+.PHONY : net/net_src/HttpResponse.cc.o
+
+net/net_src/HttpResponse.i: net/net_src/HttpResponse.cc.i
+
+.PHONY : net/net_src/HttpResponse.i
+
+# target to preprocess a source file
+net/net_src/HttpResponse.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.i
+.PHONY : net/net_src/HttpResponse.cc.i
+
+net/net_src/HttpResponse.s: net/net_src/HttpResponse.cc.s
+
+.PHONY : net/net_src/HttpResponse.s
+
+# target to generate assembly for a file
+net/net_src/HttpResponse.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpResponse.cc.s
+.PHONY : net/net_src/HttpResponse.cc.s
+
+net/net_src/HttpServer.o: net/net_src/HttpServer.cc.o
+
+.PHONY : net/net_src/HttpServer.o
+
+# target to build an object file
+net/net_src/HttpServer.cc.o:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.o
+.PHONY : net/net_src/HttpServer.cc.o
+
+net/net_src/HttpServer.i: net/net_src/HttpServer.cc.i
+
+.PHONY : net/net_src/HttpServer.i
+
+# target to preprocess a source file
+net/net_src/HttpServer.cc.i:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.i
+.PHONY : net/net_src/HttpServer.cc.i
+
+net/net_src/HttpServer.s: net/net_src/HttpServer.cc.s
+
+.PHONY : net/net_src/HttpServer.s
+
+# target to generate assembly for a file
+net/net_src/HttpServer.cc.s:
+	$(MAKE) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/net/net_src/HttpServer.cc.s
+.PHONY : net/net_src/HttpServer.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -612,6 +720,18 @@ help:
 	@echo "... muduo_src/Thread.o"
 	@echo "... muduo_src/Thread.i"
 	@echo "... muduo_src/Thread.s"
+	@echo "... net/net_src/HttpContext.o"
+	@echo "... net/net_src/HttpContext.i"
+	@echo "... net/net_src/HttpContext.s"
+	@echo "... net/net_src/HttpRequest.o"
+	@echo "... net/net_src/HttpRequest.i"
+	@echo "... net/net_src/HttpRequest.s"
+	@echo "... net/net_src/HttpResponse.o"
+	@echo "... net/net_src/HttpResponse.i"
+	@echo "... net/net_src/HttpResponse.s"
+	@echo "... net/net_src/HttpServer.o"
+	@echo "... net/net_src/HttpServer.i"
+	@echo "... net/net_src/HttpServer.s"
 .PHONY : help
 
 

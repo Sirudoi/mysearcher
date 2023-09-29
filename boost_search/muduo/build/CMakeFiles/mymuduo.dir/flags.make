@@ -6,5 +6,5 @@ CXX_FLAGS =  -g -std=c++11 -fPIC
 
 CXX_DEFINES = -Dmymuduo_EXPORTS
 
-CXX_INCLUDES = -I/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/muduo_include 
+CXX_INCLUDES = -I/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/muduo_include -I/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/muduo/net/net_include 
 
