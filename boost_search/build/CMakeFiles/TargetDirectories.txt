@@ -1,0 +1,4 @@
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles/edit_cache.dir
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles/rebuild_cache.dir
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles/boost_searcher.dir
+/home/wr/GitHub_house/Item/boost_search/mysearcher/boost_search/build/CMakeFiles/boost_parser.dir
